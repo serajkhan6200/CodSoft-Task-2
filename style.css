@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #D0D4D5;
+    position: relative;
+}
+
+#nav{
+    height: 110px;
+    padding: 0 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav img{
+    height: 35px;
+    margin-right: 170px;
+   margin-left: 50px; 
+}
+
+
+#nav-prt1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-prt1 h4:hover{
+    transition: 0.4s ease;
+    color: blue;
+    border-bottom: 3px solid blue;
+
+}
+
+#nav-prt1 .active{
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+
+    #nav-prt1 h4{
+    margin-right: 60px;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#nav-prt2 i{
+    margin-right: 60px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#nav-prt2 i:hover{
+    border-bottom: 3px solid blue;
+    transition: 0.4s ease;
+    color: blue;
+}
+
+#content{
+    width: 100%;
+    height: calc(100% - 110px);
+    position: relative;
+    display: flex;
+}
+
+#left{
+    width: 35%;
+    height: 100%;
+    padding: 120px 150px;
+}
+
+#left h5{
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #535353;
+}
+
+
+#left h1{
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+#left p{
+    font-size: 14px;
+    margin-bottom: 38px;
+}
+
+#left button{
+    background-color: #000;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    text-transform: uppercase;
+}
+
+#left button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.7s ease;
+}
+
+#right{
+    height: 100%;
+    width: 65%;
+    position: relative;
+    padding: 100px ;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#right::-webkit-scrollbar{
+    display: none;
+}
+
+.elem{
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3) ;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: inline-block;
+    transition: 1s;
+}
+
+.elem img{
+    height: 50%;
+    width: 100%;
+    top: 12%;
+    object-fit: cover;
+    position: absolute;
+    
+}
+
+.elem:hover{
+    transform: scale(1.15);
+    z-index: 2;
+}
+
+.elem h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #D0D4D5;
+    padding: 15px 25px;
+    border-radius: 6px;
+}
+
+.elem h5{
+    position: absolute;
+    bottom: 12%;
+    right: 0;
+    background-color: #000000;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 25px;
+    font-size: 13px;
+    border-radius: 6px;
+}
